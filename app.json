@@ -1,0 +1,7 @@
+{
+  "name": "Red Cow",
+  "description": "Crowdfunding for Red Cow",
+  "repository": "https://github.com/dbronsh/selfstarter",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["red", "cow", "heifer"]
+}
