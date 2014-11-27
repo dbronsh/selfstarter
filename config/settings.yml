@@ -7,22 +7,22 @@
 
 # Set your project goal here - dollar amount
 # NOTE: if you manually want to adjust your progress to test the site, head over to the Order model (app/models/order.rb)
-project_goal: 100000
+project_goal: 400000
 
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "Selfstarter"
+product_name: "Red Heifer"
 
 # This will be used in sentences like Hooray You've just reserved product_description
-product_description: "a set of widgets"
+product_description: "thank you for contributing the Red Heifer project"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
-product_image_path: "my-product-image.png"
+product_image_path: "red_heifer_banner.jpg"
 
 # The message on the preorder page, Lockitron's is ""
-value_proposition: "Roll your own crowdfunding"
+value_proposition: "You can be a part of it"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
 # Replace /embed/ in your video url path with /v/ for video playback to work.
@@ -41,19 +41,19 @@ use_video_placeholder: true
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
 amazon_access_key: "YOUR_AMAZON_ACCESS_KEY"
 amazon_secret_key: "YOUR_AMAZON_SECRET_KEY"
-price: 	19.95
+price: 	360
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
 # There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
 # put code in seeds.rb, then run rake db:seed
-use_payment_options: false
+use_payment_options: true
 
-payment_description: "You really should change this text because people will see it on Amazon's order page!!!!!"
+payment_description: "You are going to take a part in the Red Heifer project !"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
 # this value will be added to the price to create a charge limit
-charge_limit: 25.00
+charge_limit: 0.00
 
 # Stats settings
 
@@ -66,7 +66,7 @@ primary_stat_verb: 'backer'
 middle_reserve_text: "Reserve Now"
 
 # When the project should end
-expiration_date: <%= DateTime.now + 29 %>
+expiration_date: <%= DateTime.now + 69 %>
 
 # Text to show inside the progress bar, when the goal reaches/exceeds 100%
 progress_text: "Implemented"
@@ -74,12 +74,12 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Ships...sometime"
+ships: "We can't wait for shipping..."
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Reserve Now"
+call_to_action: "Donate Now"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "It costs money!"
+price_human: "Only 360$ for yearly subscription !"
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
 dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
@@ -88,7 +88,7 @@ dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need 
 facebook_app_id: "1234567890"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
-tweet_text: "to crowdfund"
+tweet_text: "to participate"
 
 # Google Analytics
 google_id: "1234567890"
