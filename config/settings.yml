@@ -66,7 +66,7 @@ primary_stat_verb: 'backer'
 middle_reserve_text: "Reserve Now"
 
 # When the project should end
-expiration_date: <%= DateTime.now + 69 %>
+#expiration_date: <%= DateTime.now + 69 %>
 
 # Text to show inside the progress bar, when the goal reaches/exceeds 100%
 progress_text: "Implemented"
