@@ -1,0 +1,33 @@
+<div class="gray_background" dir="rtl">
+  <div class="wrapper clearfix">
+    <div class="main_content <%= "payment_options" if Settings.use_payment_options %>">
+      <h3>תרומה</h3>
+      <p>
+      כל פרטי התשלום מאובטחים ונשמרים באתר Amazon. אם אין לך חשבון Amazon פעיל, תוכל ליצור חשבון חדש.
+        All of your payment information will be secured and stored with Amazon Payments. If you don't have an Amazon account, simply select "I'm a new Customer" on the next page.
+        <br />
+        <br />
+        <% if Settings.use_payment_options %>
+          בחר אפשרות תשלום ומלא את כתובת הדוא"ל שלך כאן
+        <% else %>
+          נא מלא את פרטי כתובת הדוא"ל שלך כאן
+        <% end %>
+
+      </p>
+      <%= form_tag "/preorder/prefill", :id => "checkout" do %>
+        <%= render 'preorder/payment_options' %>
+        <div class="checkout_controls">
+          <div class="checkout_controls_wrapper">
+            <div class="checkout_controls_inner">
+              <%= email_field_tag "email", nil, :placeholder => 'כתובת דוא"ל', :required => "required", :id => "email" %>
+              <%= hidden_field_tag "preorder", true %>
+              <%= hidden_field_tag "quantity", params[:quantity] %>
+              <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= render 'preorder/checkout/sidebar' %>
+  </div>
+</div>
