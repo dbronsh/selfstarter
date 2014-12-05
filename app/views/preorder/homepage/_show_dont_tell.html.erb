@@ -1,4 +1,16 @@
-<div class="gray_background">
-  <%= render 'preorder/homepage/value_proposition' %>
-  <%= render 'preorder/homepage/stats' %>
+<div class="gray_background" dir="rtl">
+  <!--%= render 'preorder/homepage/value_proposition' %-->
+  <table >
+	<tr>
+		<td class='top padding20 width512'>
+			<%= render 'preorder/homepage/key_points_right' %>
+		</td>
+		<td class='padding20 '>
+			<%= render 'preorder/homepage/stats' %>
+		</td>
+		<td class='top padding20 width512'>
+			<%= render 'preorder/homepage/key_points_left' %>
+		</td>
+	</tr>
+ </table>
 </div>

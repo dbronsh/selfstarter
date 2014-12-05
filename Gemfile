@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'

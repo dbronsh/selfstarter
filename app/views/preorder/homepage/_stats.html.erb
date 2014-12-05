@@ -1,8 +1,8 @@
-<div class="wrapper clearfix">
+<div class="clearfix">
   <div id="video">
     <% if Settings.use_video_placeholder %>
       <div id="video_image">
-        <img alt="video_place_holder" width='512px' height='385px' src="/assets/video_placeholder.png" />
+        <img alt="video_place_holder" width='512px' height='385px' src="/assets/MoviePic.jpg" />
       </div>
       <div id="player" class="hidden" style="display: none;">
         <object width="512" height="385">
@@ -16,7 +16,7 @@
       <iframe width='512' height='385' src="<%= video_url %>"></iframe>
     <% end %>
   </div>
-
+<!--
   <div id="backing">
     <ul>
       <li class="stats" id="backers">
@@ -50,13 +50,11 @@
     <% end %>
     
     <div id="reserve_container">
-      <p id="ship_date"><%= Settings.ships %></p>
+      <p id="ship_date">מצוות הטהרה תלויה בך</p>
       <a href="/preorder/checkout" class="blue_button reserve"><%= t(:call_to_action) %></a>
-      <p id="price"><%= Settings.price_human %></p>
-      <p><%= Settings.dont_give_them_a_reason_to_say_no %></p>
       <%= like_button %>
     </div>
     
   </div>
-  
+  -->
 </div>

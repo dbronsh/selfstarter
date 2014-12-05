@@ -7,12 +7,21 @@
 }
 
 .point_copy {
-  width: 440px;
+  
   h3 {
     margin: 20px 0 30px 0;
   }
 }
-
+.width512 {
+	width: 512px;
+	}
+.padding20 {
+	padding: 20px;
+	}
+.top {
+	vertical-align: top;
+	}
+	
 h3 {
   font-size: 42px;
   font-family: $primary_font, $secondary_font, $tertiary_font;
@@ -26,13 +35,12 @@ h3 {
 
 #one {
   background: url(image_path("1-background.png")) no-repeat bottom left;
-  height: 320px;
-  width: 936px;
+ 
 }
 
 #two {
   background: url(image_path("2-background.png")) no-repeat bottom left;
-  height: 320px;
+ 
 }
 
 #three {

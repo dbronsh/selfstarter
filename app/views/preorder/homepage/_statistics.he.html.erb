@@ -1,0 +1,33 @@
+			 <div id="backing">
+				<ul>
+				  <li class="stats" id="backers" dir="rtl">
+					<%= number_with_delimiter Order.backers, :delimiter => "," %>
+					<span><%= t(:doners) %></span>
+				  </li>
+				  <li class="stats" dir="rtl">
+					<%= number_to_currency Order.revenue, :precision => 0 %>
+					<span>מתוך <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %></span>
+				  </li>
+
+				  <% if Settings.expiration_date.present? %>
+					<li class="stats" id="days">
+					  <%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\D/, "") %>
+					  <span><%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\d/, "").gsub("about", "") %> left</span>
+					</li>
+				  <% end %>
+				</ul>
+				
+				<% if Order.revenue.to_f < Order.goal.to_f %>
+				  <div id='progress_bg' class='small' dir="ltr">
+					<div id='progress' class='' style='width: <%= Order.percent %>%;'>
+					</div>
+				  </div>
+				<% else %>
+				  <div id="progress_bg">
+					<div id="progress">
+					</div>
+					<div id='progress_text'><%= Order.percent %>% <%= t(implemented) %></div>
+				  </div>
+				<% end %>
+				
+			</div>
