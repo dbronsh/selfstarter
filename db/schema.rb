@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20130107010733) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "payment_option_id"
+    t.string   "message"
   end
 
   create_table "payment_options", force: true do |t|
