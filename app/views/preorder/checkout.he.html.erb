@@ -6,12 +6,7 @@
       כל פרטי התשלום מאובטחים ונשמרים באתר Amazon. אם אין לך חשבון Amazon פעיל, תוכל ליצור חשבון חדש.
         <br />
         <br />
-        <% if Settings.use_payment_options %>
-          בחר אפשרות תשלום ומלא את כתובת הדוא"ל שלך כאן
-        <% else %>
-          נא מלא את פרטי כתובת הדוא"ל שלך כאן
-        <% end %>
-
+        נא מלא את פרטי התרומה
       </p>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= render 'preorder/payment_options' %>
