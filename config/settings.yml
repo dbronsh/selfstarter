@@ -46,7 +46,7 @@ price: 	18
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
 # There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
 # put code in seeds.rb, then run rake db:seed
-use_payment_options: true
+use_payment_options: false
 
 payment_description: "You are going to take a part in the Red Heifer project !"
 
