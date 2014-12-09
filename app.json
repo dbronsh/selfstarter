@@ -3,9 +3,5 @@
   "description": "Crowdfunding for Red Cow",
   "repository": "https://github.com/dbronsh/selfstarter",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["red", "cow", "heifer"],
-  "env" : {
-            "DATABASE_URL": "postgres://zwvbuhxemwwknw:LLR1i8SxlWS1deM-reUpUZfmKI@ec2-54-225-156-230.compute-1.amazonaws.com:5432/dculkbg24ogktl",
-            "HEROKU_POSTGRESQL_MAUVE_URL": "postgres://zwvbuhxemwwknw:LLR1i8SxlWS1deM-reUpUZfmKI@ec2-54-225-156-230.compute-1.amazonaws.com:5432/dculkbg24ogktl"
-          }
+  "keywords": ["red", "cow", "heifer"]
 }
