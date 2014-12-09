@@ -73,26 +73,26 @@ PaymentOption.create(
         }
     ])
     
-    User.create(
-    [
-        {
-            id: '1'
-            email: 'aa.aa@sa.sa'
-        },
-    ])
+  #  User.create(
+  #  [
+  #      {
+  #          id: '1'
+  #          email: 'aa.aa@sa.sa'
+  #      },
+  #  ])
     
-    Order.create(
-    [
-        {
-            user-id: '1',
-            token: 'approved-1234',
-            price: '18',
-            message: "I'm looking forward to see it happens!",
-        },
-        {
-            user-id: '1',
-            token: 'approved-ABCD',
-            price: '360',
-            message: "Have a good luck",
-        },
-    ])
+  #  Order.create(
+  #  [
+  #      {
+  #          user-id: '1',
+  #          token: 'approved-1234',
+  #          price: '18',
+  #          message: "I'm looking forward to see it happens!",
+  #      },
+  #      {
+  #          user-id: '1',
+  #          token: 'approved-ABCD',
+  #          price: '360',
+  #          message: "Have a good luck",
+  #      },
+  #  ])
