@@ -19,7 +19,7 @@ class CreateOrders < ActiveRecord::Migration
       t.string  :phone
       t.string  :name
       t.date    :expiration
-      t.string  :message
+  #    t.string  :message
       t.timestamps
     end
   end
