@@ -29,7 +29,7 @@ group :development, :test do
 end
 
 # jQuery
-gem 'jquery-rails', '~> 2.3.0'
+gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 # Kickstarter's awesome Amazon Flexible Payments gem
